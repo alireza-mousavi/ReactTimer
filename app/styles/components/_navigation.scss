@@ -1,0 +1,17 @@
+ .top-bar, .top-bar ul{
+   background-color: $nav-background;
+ }
+
+//Same as => .top-bar .menu-text {}
+.top-bar {
+  .menu-text {
+    color: $nav-text-color;
+  }
+
+// We only want to adjust the name link on the top right (class= menu-text), and
+// not the other two links.
+  .menu > .menu-text > a {
+    display: inline;
+    padding: 0;
+  }
+}
